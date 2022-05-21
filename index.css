@@ -1,12 +1,65 @@
+:root {
+  --colorText: #243363;
+  --colorTextHove: #def6ff;
+}
 html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
-  background-color: gray;
+  background-color: whitesmoke;
 }
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #7cbbd2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: thin 1px black;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: var(--colorText);
+  list-style: none;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+a:hover {
+  color: var(--colorTextHove);
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  gap: 13px;
+  padding-right: 20px;
+}
+.iconos {
+}
+.iconos svg {
+  fill: var(--colorText);
+  width: 25px;
+  height: 25px;
+}
+.iconos svg:hover {
+  fill: var(--colorTextHove);
+}
+.icono-inicio svg {
+  padding-left: 10px;
+  width: 350px;
+  height: auto;
 }
