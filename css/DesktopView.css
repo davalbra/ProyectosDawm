@@ -24,4 +24,23 @@
     background-color: var(--First-color);
     padding: 0.7rem;
   }
+  /* **********About****** */
+  .principal-image {
+    display: inline-flex;
+    width: 45vw;
+  }
+  .img-text {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.8rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .section {
+    padding: 3rem 5rem;
+  }
 }

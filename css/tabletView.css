@@ -15,4 +15,10 @@
     background-color: var(--First-color);
     padding: 0.7rem;
   }
+  /* **********About****** */
+  .acerca {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+  }
 }
