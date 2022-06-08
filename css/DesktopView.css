@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+  /* ***********Nav********** */
+  .cheked svg {
+    display: none;
+  }
+  .marco-nav {
+    height: 3.5rem;
+  }
+  .container {
+    align-content: space-between;
+    top: 0;
+    position: absolute;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    top: 0;
+    justify-content: right;
+    padding-right: 2rem;
+  }
+  .menu a {
+    color: var(--white-color);
+    background-color: var(--First-color);
+    padding: 0.7rem;
+  }
+}
