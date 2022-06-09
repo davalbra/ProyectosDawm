@@ -277,3 +277,61 @@ progress::-moz-progress-bar {
 .service-card h3 {
   padding-top: 0.7rem;
 }
+/* **********Proyectos**** */
+.container-proyecto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+  width: 36%;
+}
+.img-proyecto {
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+.img-proyecto img {
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  max-width: 50%;
+}
+
+.atributos-proyecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  /* width: 800px;
+  margin: 100px auto; */
+}
+td,
+th {
+  border: thin solid gray;
+  padding: 5px;
+}
+tr:nth-child(even) {
+  background-color: #eee;
+}
+td:nth-child(n + 3),
+th:nth-child(n + 3) {
+  text-align: center;
+}
+tbody tr:hover {
+  background-color: rgb(160, 222, 225) !important;
+}
+thead {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+thead th {
+  border: 0;
+}
