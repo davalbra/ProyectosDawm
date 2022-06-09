@@ -100,6 +100,21 @@ p {
 .contenido {
   margin-bottom: 2rem;
 }
+.bg-gray-light {
+  background-color: var(--grey-light-color);
+}
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+.section-title {
+  border-top: thin solid var(--First-color);
+  border-bottom: thin solid var(--First-color);
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  width: 250px;
+  text-align: center;
+  color: var(--title-color);
+}
 /* ********Components*********************** */
 /* ********NAV*********************** */
 .cheked svg {
@@ -243,4 +258,22 @@ progress::-moz-progress-bar {
 }
 .habilidades:hover {
   box-shadow: 0px 30px 50px -35px var(--grey-color);
+}
+/* *********Tecnologias********** */
+.service-card {
+  margin: 1.4rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+.service-card svg {
+  margin-bottom: 1.25rem;
+}
+.service-card h3 {
+  color: var(--title-color);
+}
+.service-card p {
+  padding-top: 0.7rem;
+}
+.service-card h3 {
+  padding-top: 0.7rem;
 }

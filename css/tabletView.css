@@ -20,5 +20,16 @@
     display: grid;
     grid-template-columns: repeat(2, 45%);
     justify-content: space-between;
+    align-content: center;
+  }
+  /* *********tecnologias***** */
+  .container-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-content: center;
+  }
+  .section-title {
+    grid-column: span 2;
   }
 }
