@@ -1,14 +1,12 @@
 @media screen and (min-width: 768px) {
   /* ************Nav******* */
+
   .marco-nav {
-    height: 3.5rem;
-  }
-  .container {
     top: 0;
   }
   .menu {
     position: absolute;
-    top: 3.5rem;
+    top: 2.5rem;
   }
   .menu a {
     color: var(--white-color);
@@ -31,5 +29,32 @@
   }
   .section-title {
     grid-column: span 2;
+  }
+  /* **********Proyectos*********** */
+
+  .proyecto {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    width: 100%;
+  }
+  td,
+  th {
+    font-size: 2vw;
+  }
+
+  /* *************social************* */
+  .contenido-map-red {
+    flex-direction: row;
+  }
+  .titulo-espol {
+    font-size: 3vw;
+    text-align: center;
+  }
+  .map {
+    min-height: 450px;
+  }
+  /* ***************Footer*************/
+  .footer {
+    margin-bottom: 0;
   }
 }

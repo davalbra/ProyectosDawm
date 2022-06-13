@@ -8,24 +8,24 @@
     padding: 0 10vw;
   }
   /* ***********Nav********** */
-  .cheked {
+  .cheked,
+  #check {
+    position: fixed;
     visibility: hidden;
     display: none;
   }
+
   .marco-nav {
-    height: 3.5rem;
-  }
-  .container {
     top: 0;
     position: none;
+    display: flex;
+    justify-content: space-between;
   }
   .menu {
     display: flex;
     flex-direction: row;
-    bottom: 0;
-    top: 0;
-
-    padding-left: 36rem;
+    position: initial;
+    width: auto;
   }
   .menu a {
     color: var(--white-color);
@@ -56,5 +56,21 @@
   }
   .section-title {
     grid-column: span 3;
+  }
+  /* **********Proyectos*********** */
+
+  .proyecto {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    width: 100%;
+  }
+  td,
+  th {
+    font-size: 1vw;
+  }
+
+  /* *************Formulario************* */
+  .container-form {
+    max-width: 40vw;
   }
 }
