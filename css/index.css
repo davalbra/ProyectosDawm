@@ -309,51 +309,24 @@ progress::-moz-progress-bar {
 .img-proyecto {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 60vh;
   border-radius: inherit;
 }
 .img-proyecto img {
   border-radius: inherit;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  object-fit: cover;
 }
 
 .atributos-proyecto {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  /* width: 800px;
-  margin: 100px auto; */
-}
-caption {
-  padding-bottom: 0.75rem;
-}
-td,
-th {
-  border: thin solid gray;
-  padding: 0.5vw;
-  background-color: rgb(218, 218, 218);
-}
 
-td:nth-child(n + 3),
-th:nth-child(n + 3) {
-  text-align: center;
-}
-tbody tr:hover {
-  background-color: rgb(160, 222, 225) !important;
-}
-thead {
-  background-color: var(--grey-dark-color);
-  color: #222;
-}
-thead th {
-  border: 0;
-}
 /* **********Social************* */
 .container-social {
   display: flex;
@@ -389,10 +362,9 @@ iframe {
 .reds {
   padding: 2rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
   border-radius: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 45%);
-  justify-items: center;
   align-items: center;
   box-shadow: 5px 5px 30px 0px rgb(214, 214, 214);
   gap: 1rem;
@@ -413,7 +385,16 @@ iframe {
   width: 100%;
   height: auto;
 }
-.red {
+.contet-iframe {
+  width: auto;
+  height: 60%;
+  /* background-color: #000;
+  border-radius: 1rem; */
+}
+video {
+  border-radius: 1rem;
+}
+/* .red {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -429,6 +410,42 @@ iframe {
 .red svg {
   fill: #ff6161;
   max-width: 2rem;
+} */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+caption {
+  padding-bottom: 0.75rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+td,
+th {
+  /* border: thin solid gray; */
+  padding: 0.5vw 4vw;
+}
+th {
+  color: var(--First-color);
+}
+td svg {
+  fill: var(--First-color);
+  max-width: 30px;
+  min-width: 30px;
+}
+td:nth-child(n + 3),
+th:nth-child(n + 3) {
+  text-align: center;
+}
+
+thead {
+  color: #222;
+}
+thead th {
+  /* border: 0; */
+}
+tr:nth-child(n) {
+  border-bottom: thin solid var(--grey-color);
 }
 /* ***********Formulario********** */
 .contactame {
