@@ -18,4 +18,5 @@ Algunos proyectos que he realizado
 Incluye informacion de mis redes sociales
 ##Imbox
 ![image](https://user-images.githubusercontent.com/74167198/174422863-786ff5fc-c5d9-455c-ac32-3f41acf66855.png)
+
 sección para que dejen su información
