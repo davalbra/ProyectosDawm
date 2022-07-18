@@ -1,0 +1,159 @@
+:root {
+  --First-color: #52cdff;
+  --bg-color: #ebebeb;
+}
+.ocultar {
+  display: none;
+}
+.selected {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 2em;
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.main-table {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 62vw;
+}
+td,
+th {
+  border: thin solid gray;
+  padding: 5px;
+}
+tr:nth-child(even) {
+  background-color: #eee;
+}
+td:nth-child(n + 3),
+th:nth-child(n + 3) {
+  text-align: center;
+}
+tbody tr:hover {
+  background-color: rgb(160, 222, 225) !important;
+}
+thead {
+  background-color: var(--First-color);
+  color: white;
+  position: sticky;
+  top: 0;
+}
+thead th {
+  border: 0;
+}
+/* tabla-container */
+.menu-tabli {
+  display: flex;
+  justify-content: center !important;
+}
+.menu-options {
+  justify-content: space-between !important;
+  min-width: 60vw;
+}
+
+.tabla-container {
+  padding-top: 2rem;
+  background-color: var(--bg-color);
+}
+.tab-content {
+  padding: 0 !important;
+}
+/* css para cartas */
+.cards {
+  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  height: auto;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  color: rgb(59, 59, 59);
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
+    -5px 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+.imgphone {
+  display: flex;
+  justify-content: center;
+}
+.card a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card a:hover {
+  color: black;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  margin-right: 80px;
+  transform: rotate(3deg) translateY(-15px);
+}
+.date {
+  font-size: 12px;
+}
+.title {
+  font-size: 28px;
+}
+.footer img {
+  width: 48px;
+  border-radius: 50%;
+}
+.autor a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card[class*="element"] {
+  margin-left: -50px;
+}
+.element-1:hover,
+element-2 {
+  margin-left: -130px;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.currency {
+  font-size: 25px;
+}
+.number {
+  font-size: 60px;
+  font-weight: bold;
+}
+.frecuency {
+  color: black;
+}
