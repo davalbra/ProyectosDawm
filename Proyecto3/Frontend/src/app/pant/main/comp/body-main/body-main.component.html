@@ -1,0 +1,20 @@
+<div class="contenedor">
+  <mat-card *ngFor="let datos of firebas" class="example-card">
+    <div class="contai">
+      <div class="visitante">
+        <div class="title">{{ datos.visitante?.nombreEquipo }}</div>
+        <div class="logo">
+          <img src="{{ datos.visitante?.img }}" alt="" />
+        </div>
+        <div class="goles">{{ datos.visitante?.goles }}</div>
+      </div>
+      <div class="local">
+        <div class="title">{{ datos.local?.nombreEquipo }}</div>
+        <div class="logo">
+          <img src="{{ datos.local?.img }}" alt="" />
+        </div>
+        <div class="goles">{{ datos.local?.goles }}</div>
+      </div>
+    </div>
+  </mat-card>
+</div>

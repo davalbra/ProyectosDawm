@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>Visitante</h1>
+  <div class="inputEquipo">
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Message</mat-label>
+        <input
+          [(ngModel)]="texto"
+          name="Texto"
+          (change)="emailUpdated($event)"
+          matInput
+          #message
+          maxlength="256"
+          placeholder="Ex. I need help with..."
+        />
+        <mat-hint align="start"
+          ><strong>Don't disclose personal info</strong>
+        </mat-hint>
+        <mat-hint align="end">{{ message.value.length }} / 250</mat-hint>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="cards">
+    <div class="contenedor">
+      <mat-card *ngFor="let datos of firebas" class="example-card">
+        <div class="contai">
+          <div class="local">
+            <div class="title">{{ datos.copa }}</div>
+            <div class="logo">
+              <img src="{{ datos.visitante?.img }}" alt="" />
+            </div>
+            <div class="goles">goles: {{ datos.visitante?.goles }}</div>
+            <div class="goles">Amarillas: {{ datos.visitante?.amarillas }}</div>
+            <div class="goles">
+              Fuera de juego: {{ datos.visitante?.fueraDeJuego }}
+            </div>
+            <div class="goles">roja: {{ datos.visitante?.rojas }}</div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

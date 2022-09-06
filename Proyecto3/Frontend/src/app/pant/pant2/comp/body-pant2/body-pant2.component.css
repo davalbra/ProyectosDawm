@@ -1,0 +1,33 @@
+.contenedor {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.example-card {
+  width: 80vw;
+}
+.contai {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20%;
+}
+img {
+  width: 40px;
+}
+.visitante,
+.local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

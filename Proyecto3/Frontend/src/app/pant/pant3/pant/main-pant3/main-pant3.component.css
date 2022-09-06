@@ -1,0 +1,12 @@
+.example-flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.button-set {
+  position: fixed;
+  bottom: 0;
+}
+.body {
+  margin-bottom: 40%;
+}

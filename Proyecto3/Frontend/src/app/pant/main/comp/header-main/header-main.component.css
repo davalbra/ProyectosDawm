@@ -1,0 +1,15 @@
+.cont-text {
+  width: 100vw;
+  height: 3rem;
+  background: url(https://dawfiec.github.io/DAWM-2022/assets/images/background.png)
+    #4276b6;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.title {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  margin-left: 2rem;
+}

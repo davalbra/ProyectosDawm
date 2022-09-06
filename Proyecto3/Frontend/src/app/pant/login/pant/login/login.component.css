@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  height: 70vh;
+}
+.element {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 4rem;
+  justify-content: center;
+}
+.title {
+  color: tomato;
+}
